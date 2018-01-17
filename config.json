@@ -1,0 +1,176 @@
+{
+  "hardware": [
+    {
+      "a_mem": 16,
+      "name": "m1",
+      "mem": 16,
+      "ip": "128.0.0.1",
+      "disks": 8,
+      "a_vcpus": 4,
+      "rack": "r1",
+      "vcpus": 4,
+      "a_disks": 8
+    },
+    {
+      "a_mem": 16,
+      "name": "m2",
+      "mem": 16,
+      "ip": "128.0.0.2",
+      "disks": 32,
+      "a_vcpus": 4,
+      "rack": "r1",
+      "vcpus": 4,
+      "a_disks": 32
+    },
+    {
+      "a_mem": 16,
+      "name": "m3",
+      "mem": 16,
+      "ip": "128.0.0.3",
+      "disks": 16,
+      "a_vcpus": 4,
+      "rack": "r1",
+      "vcpus": 4,
+      "a_disks": 16
+    },
+    {
+      "a_mem": 15,
+      "name": "m4",
+      "mem": 16,
+      "ip": "128.0.0.4",
+      "disks": 8,
+      "a_vcpus": 3,
+      "rack": "r2",
+      "vcpus": 4,
+      "a_disks": 7
+    },
+    {
+      "a_mem": 32,
+      "name": "k1",
+      "mem": 32,
+      "ip": "128.1.1.0",
+      "disks": 32,
+      "a_vcpus": 8,
+      "rack": "r2",
+      "vcpus": 8,
+      "a_disks": 32
+    },
+    {
+      "a_mem": 32,
+      "name": "k2",
+      "mem": 32,
+      "ip": "128.1.0.2",
+      "disks": 32,
+      "a_vcpus": 8,
+      "rack": "r2",
+      "vcpus": 8,
+      "a_disks": 32
+    },
+    {
+      "a_mem": 32,
+      "name": "k3",
+      "mem": 32,
+      "ip": "128.1.3.0",
+      "disks": 32,
+      "a_vcpus": 8,
+      "rack": "r2",
+      "vcpus": 8,
+      "a_disks": 32
+    },
+    {
+      "a_mem": 8,
+      "name": "calvin",
+      "mem": 8,
+      "ip": "128.129.4.4",
+      "disks": 16,
+      "a_vcpus": 1,
+      "rack": "r1",
+      "vcpus": 1,
+      "a_disks": 16
+    },
+    {
+      "a_mem": 16,
+      "name": "hobbes",
+      "mem": 16,
+      "ip": "1.1.1.1",
+      "disks": 64,
+      "a_vcpus": 16,
+      "rack": "r1",
+      "vcpus": 16,
+      "a_disks": 64
+    },
+    {
+      "a_mem": 64,
+      "name": "dora",
+      "mem": 64,
+      "ip": "1.1.1.2",
+      "disks": 256,
+      "a_vcpus": 16,
+      "rack": "r1",
+      "vcpus": 16,
+      "a_disks": 256
+    }
+  ],
+  "images": [
+    {
+      "path": "/images/linux-ubuntu-v1.0.img",
+      "name": "linux-ubuntu",
+      "size": "128"
+    },
+    {
+      "path": "/images/old-image.img",
+      "name": "linux-sles",
+      "size": "512"
+    },
+    {
+      "path": "/images/linux-ubuntu-16.img",
+      "name": "linux-ubuntu-16",
+      "size": "2048"
+    }
+  ],
+  "racks": [
+    {
+      "capacity": "40960",
+      "name": "r1"
+    },
+    {
+      "capacity": "40960",
+      "name": "r2"
+    }
+  ],
+  "flavors": [
+    {
+      "vcpus": 1,
+      "disks": 1,
+      "ram": 1,
+      "name": "small"
+    },
+    {
+      "vcpus": 4,
+      "disks": 2,
+      "ram": 8,
+      "name": "medium"
+    },
+    {
+      "vcpus": 4,
+      "disks": 2,
+      "ram": 16,
+      "name": "large"
+    },
+    {
+      "vcpus": 8,
+      "disks": 4,
+      "ram": 32,
+      "name": "xlarge"
+    }
+  ],
+  "instances": [
+    {
+      "machine": "m4",
+      "flavor": "small",
+      "name": "snowfall",
+      "image": "linux-ubuntu",
+      "rack": "r2"
+    }
+  ]
+}
